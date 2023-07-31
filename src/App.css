@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 735px; /* Altura fixa do container */
+  background-color: #007bff; /* Cor de fundo azul */
+  padding: 20px; /* Adiciona espaçamento interno para criar as bordas brancas */
+  border: 90px solid #333; /* Adiciona uma borda branca ao redor do container */
+  box-sizing: border-box; /* Faz com que a borda seja incluída na altura e largura do container */
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff; /* Cor do texto branco */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333; /* Cor de fundo azul escuro */
+  color: #ffffff; /* Cor do texto branco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #000000; 
+}
+
+footer {
+  position: fixed; /* Posiciona o rodapé no canto inferior da janela */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff; /* Cor do texto branco */
+  background-color: #333; /* Cor de fundo cinza escuro */
+}
