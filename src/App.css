@@ -1,51 +1,124 @@
+/* Estilo para o corpo do documento */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #333;
+  background-image: url(https://wallpaperaccess.com/full/3442970.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.container {
+/* Estilo para o cabeçalho */
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 735px; /* Altura fixa do container */
-  background-color: #007bff; /* Cor de fundo azul */
-  padding: 20px; /* Adiciona espaçamento interno para criar as bordas brancas */
-  border: 90px solid #333; /* Adiciona uma borda branca ao redor do container */
-  box-sizing: border-box; /* Faz com que a borda seja incluída na altura e largura do container */
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.748);
+  color: white;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #fff; /* Cor do texto branco */
+/* Estilo para o logo */
+.logo {
+  width: 90px;
+  margin-right: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #333; /* Cor de fundo azul escuro */
-  color: #ffffff; /* Cor do texto branco */
+/* Estilo para o botão */
+.header button {
+  background-color: transparent;
+  color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  margin: 10px;
+  font-size: 16px;
 }
 
-button:hover {
-  background-color: #000000; 
+/* Estilo para o contêiner dos três pontos e tópicos */
+.topics-container {
+  display: flex;
+  align-items: center;
 }
 
-footer {
-  position: fixed; /* Posiciona o rodapé no canto inferior da janela */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
+/* Estilo para os tópicos */
+.header-right {
+  display: flex;
+}
+
+.header-right span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para o conteúdo da modal */
+.ReactModal__Content {
+  position: absolute;
+  top: 130px; /* Ajuste a posição vertical da modal (distância do topo em pixels) */
+  right: 1px; /* Ajuste a posição horizontal da modal (distância da direita em pixels) */
+  background-color: rgb(0, 132, 255);
+  padding: 20px; /* Ajuste o padding para espaçamento interno desejado */
+  width: 412px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para os tópicos dentro da modal */
+.modal-topics {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-topics li {
+  margin-bottom: 10px;
+}
+/* Estilo para o botão Fechar da modal */
+.ReactModal__Content button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para o conteúdo principal do site */
+.content {
+  padding: 20px;
+  color: #333;
+}
+
+/* Estilo para o rodapé */
+.footer {
+  background-color: rgba(0, 0, 0, 0.748);
+  color: white;
+  padding: 20px;
   text-align: center;
-  font-size: 14px;
-  color: #fff; /* Cor do texto branco */
-  background-color: #333; /* Cor de fundo cinza escuro */
+}
+
+/* Estilo para o cabeçalho - posicionar logo, nome e botão */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h1 {
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o botão - ajustar tamanho e cor do ícone */
+.show-topics-button {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.show-topics-button img {
+  width: 35px;
+  height: 25px;
+  object-fit: cover;
 }
