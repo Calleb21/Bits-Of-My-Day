@@ -70,6 +70,7 @@ body {
 .modal-topics li {
   margin-bottom: 10px;
 }
+
 /* Estilo para o botão Fechar da modal */
 .ReactModal__Content button {
   margin-top: 10px;
@@ -121,4 +122,69 @@ body {
   width: 35px;
   height: 25px;
   object-fit: cover;
+}
+
+.background-image {
+  background-image: url(https://i.ytimg.com/vi/9SXVZby7l20/maxresdefault.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: calc(100vh - -224px);
+}
+
+.background-image1 {
+  background-image: url(https://th.bing.com/th/id/R.badad74944dfd14f1e12f43c10c30907?rik=U4wLXqjw2%2bne3g&riu=http%3a%2f%2fcbsnews1.cbsistatic.com%2fhub%2fi%2f2012%2f08%2f27%2fde7a74c2-a644-11e2-a3f0-029118418759%2fblackstone01.jpg&ehk=sSPRnwGEqgqrGBxNyskEkdwlD8XWWGr5gu1PIxh9JBo%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: calc(100vh - -224px);
+}
+
+.background-image2 {
+  background-image: url(https://statushero.com/assets/Ikp0a6EV3t-1000.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: calc(100vh - -224px);
+}
+
+.background-image3 {
+  background-image: url(https://i.pinimg.com/originals/cb/d6/55/cbd65522dd645f423440545797ac9d68.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: calc(100vh - -224px);
+}
+
+.background-image4 {
+  background-image: url(https://www.expressandstar.com/resizer/HY6ticwNhNeBV1m4PdQXdpFKRBk=/1200x0/cloudfront-us-east-1.images.arcpublishing.com/mna/5TTAMX5MZRA37PDQH43LLYF5PY.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: calc(100vh - -224px);
+}
+
+/* Estilo para o rodapé */
+.footer {
+  background-color: rgba(0, 0, 0, 0.748);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-button {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none; /* Removendo a borda */
+  box-shadow: none; /* Removendo a sombra */
 }
