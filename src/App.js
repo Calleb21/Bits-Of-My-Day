@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import './App.css';
 
@@ -7,6 +7,23 @@ function App() {
 
   const toggleTopics = () => {
     setShowTopics(!showTopics);
+  };
+
+  useEffect(() => {
+    // Adicionar event listener para o evento de scroll quando o componente for montado
+    window.addEventListener('scroll', handleScroll);
+
+    // Remover event listener quando o componente for desmontado para evitar vazamentos de memória
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    // Verificar se a modal está aberta e fechá-la automaticamente quando o usuário rolar a página para baixo
+    if (showTopics) {
+      setShowTopics(false);
+    }
   };
 
   return (
@@ -35,11 +52,32 @@ function App() {
       </header>
 
       {/* Novo elemento com a imagem de fundo */}
-      <div className="background-image"></div>
-      <div className="background-image1"></div>
-      <div className="background-image2"></div>
-      <div className="background-image3"></div>
-      <div className="background-image4"></div>
+      <div className="background-image">
+        {/* Contêiner para o botão "O começo" */}
+        <div className="start-button-container">
+          <button className="start-button">O sonho</button>
+        </div>
+      </div>
+      <div className="background-image1">
+        <div className="start-button1-container">
+          <button className="start-button1">O começo</button>
+        </div>
+      </div>
+      <div className="background-image2">
+        <div className="start-button2-container">
+          <button className="start-button2">A missão</button>
+        </div>
+      </div>
+      <div className="background-image3">
+        <div className="start-button3-container">
+          <button className="start-button3">Armstrong</button>
+        </div>
+      </div>
+      <div className="background-image4">
+        <div className="start-button4-container">
+          <button className="start-button4">Um pequeno passo</button>
+        </div>
+      </div>
 
       {/* Modal */}
       <Modal
@@ -54,12 +92,11 @@ function App() {
           <li>Tópico 2</li>
           <li>Tópico 3</li>
         </ul>
-        <button onClick={() => setShowTopics(false)}>Fechar</button>
       </Modal>
 
-       {/* Footer */}
-       <footer className="footer">
-        <p>Apollo's Legacy © 2023</p>
+      {/* Footer */}
+      <footer className="footer">
+        <p>Apollo's Legacy © 2023 | by Calleb Camargo</p>
         <div className="social-buttons">
           <a href="https://instagram.com/calleb_camargo_01?igshid=NTc4MTIwNjQ2YQ==" rel="noopener noreferrer">
             <button className="social-button instagram">Instagram</button>

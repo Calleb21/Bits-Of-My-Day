@@ -49,16 +49,19 @@ body {
   cursor: pointer;
 }
 
-/* Estilo para o conteúdo da modal */
+  /* Estilo para o conteúdo da modal */
 .ReactModal__Content {
   position: absolute;
   top: 130px; /* Ajuste a posição vertical da modal (distância do topo em pixels) */
   right: 1px; /* Ajuste a posição horizontal da modal (distância da direita em pixels) */
-  background-color: rgb(0, 132, 255);
+  bottom: 130px; /* Ajuste a posição vertical da modal para esticá-la para baixo */
+  background-color: rgb(0, 0, 0);
+  color: white;
   padding: 20px; /* Ajuste o padding para espaçamento interno desejado */
-  width: 412px;
+  width: 800px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Estilo para os tópicos dentro da modal */
 .modal-topics {
@@ -129,7 +132,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: calc(100vh - -224px);
+  height: calc(100vh - -100px);
 }
 
 .background-image1 {
@@ -137,7 +140,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: calc(100vh - -224px);
+  height: calc(100vh - -100px);
 }
 
 .background-image2 {
@@ -145,7 +148,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: calc(100vh - -224px);
+  height: calc(100vh - -100px);
 }
 
 .background-image3 {
@@ -153,7 +156,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: calc(100vh - -224px);
+  height: calc(100vh - -100px);
 }
 
 .background-image4 {
@@ -161,7 +164,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: calc(100vh - -224px);
+  height: calc(100vh - -100px);
 }
 
 /* Estilo para o rodapé */
@@ -188,3 +191,148 @@ body {
   border: none; /* Removendo a borda */
   box-shadow: none; /* Removendo a sombra */
 }
+
+/* Estilo para o contêiner do botão "O começo" */
+.start-button-container {
+  position: absolute;
+  bottom: -50px; /* Ajuste a posição vertical do contêiner (mais embaixo) */
+  left: 50px; /* Ajuste a posição horizontal do contêiner (afastado do canto) */
+  background-color: black; /* Cor de fundo preta */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border-radius: 0px; /* Cantos arredondados */
+}
+
+/* Estilo para o botão "O começo" */
+.start-button {
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white; /* Borda branca */
+  border-radius: 0; /* Cantos quadrados */
+  cursor: pointer;
+  font-size: 30px;
+  font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  transition: color .7s ease-in-out, background-color .7s ease-in-out; /* Transição mais lenta */
+}
+
+/* Estilo para o botão "O começo" quando o cursor estiver acima dele */
+.start-button:hover {
+  color: black; /* Torna o texto branco */
+  background-color: white; /* Torna o fundo branco */
+}
+
+
+.start-button1-container {
+  position: absolute;
+  bottom: -900px; /* Ajuste a posição vertical do contêiner (mais embaixo) */
+  left: 50px; /* Ajuste a posição horizontal do contêiner (afastado do canto) */
+  background-color: black; /* Cor de fundo preta */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border-radius: 0px; /* Cantos arredondados */
+}
+
+.start-button1 {
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white; /* Borda branca */
+  border-radius: 0; /* Cantos quadrados */
+  cursor: pointer;
+  font-size: 30px;
+  font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  transition: color .7s ease-in-out, background-color .7s ease-in-out; /* Transição mais lenta */
+}
+
+.start-button1:hover {
+  color: black; /* Torna o texto branco */
+  background-color: white; /* Torna o fundo branco */
+}
+
+.start-button2-container {
+  position: absolute;
+  bottom: -1750px; /* Ajuste a posição vertical do contêiner (mais embaixo) */
+  left: 50px; /* Ajuste a posição horizontal do contêiner (afastado do canto) */
+  background-color: black; /* Cor de fundo preta */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border-radius: 0px; /* Cantos arredondados */
+}
+
+.start-button2 {
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white; /* Borda branca */
+  border-radius: 0; /* Cantos quadrados */
+  cursor: pointer;
+  font-size: 30px;
+  font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  transition: color .7s ease-in-out, background-color .7s ease-in-out; /* Transição mais lenta */
+}
+
+.start-button2:hover {
+  color: black; /* Torna o texto branco */
+  background-color: white; /* Torna o fundo branco */
+}
+
+.start-button3-container {
+  position: absolute;
+  bottom: -2560px; /* Ajuste a posição vertical do contêiner (mais embaixo) */
+  left: 50px; /* Ajuste a posição horizontal do contêiner (afastado do canto) */
+  background-color: black; /* Cor de fundo preta */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border-radius: 0px; /* Cantos arredondados */
+}
+
+.start-button3 {
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white; /* Borda branca */
+  border-radius: 0; /* Cantos quadrados */
+  cursor: pointer;
+  font-size: 30px;
+  font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  transition: color .7s ease-in-out, background-color .7s ease-in-out; /* Transição mais lenta */
+}
+
+.start-button3:hover {
+  color: black; /* Torna o texto branco */
+  background-color: white; /* Torna o fundo branco */
+}
+
+.start-button4-container {
+  position: absolute;
+  bottom: -3400px; /* Ajuste a posição vertical do contêiner (mais embaixo) */
+  left: 50px; /* Ajuste a posição horizontal do contêiner (afastado do canto) */
+  background-color: black; /* Cor de fundo preta */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border-radius: 0px; /* Cantos arredondados */
+}
+
+.start-button4 {
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white; /* Borda branca */
+  border-radius: 0; /* Cantos quadrados */
+  cursor: pointer;
+  font-size: 30px;
+  font-family: D-DIN-Bold, Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  transition: color .7s ease-in-out, background-color .7s ease-in-out; /* Transição mais lenta */
+}
+
+.start-button4:hover {
+  color: black; /* Torna o texto branco */
+  background-color: white; /* Torna o fundo branco */
+}
+
