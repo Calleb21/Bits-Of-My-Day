@@ -94,14 +94,12 @@ function App() {
         </div>
       </div>
 
-       {/* Modal */}
-       <Modal
+      {/* Modal */}
+      <Modal
         isOpen={showTopics}
         onRequestClose={() => setShowTopics(false)}
         className="modal"
         overlayClassName="overlay"
-        ariaHideApp={false} // Impede interação com elementos externos
-        shouldCloseOnOverlayClick={false} // Evita fechar ao clicar fora da modal
       >
         {/* Conteúdo da modal */}
         <ul className="modal-topics">
