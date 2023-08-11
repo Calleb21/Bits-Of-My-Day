@@ -45,3 +45,50 @@
     border: none;
     box-shadow: none;
 }
+
+.modal5 {
+    bottom: -3492px;
+}
+
+/* Estilo para os tópicos dentro da modal */
+.modal-topics5 {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-topics5 li {
+    margin-bottom: 6px;
+    /* Reduza o espaçamento entre os itens da lista */
+    display: flex;
+    align-items: center;
+}
+
+.modal-topics5 li button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    /* Remova a borda */
+    cursor: pointer;
+    font-size: 10px;
+    padding: 2px;
+    /* Adicione a borda inferior com maior largura */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.422);
+    /* Reduza a espessura da linha */
+    width: 100px;
+    /* Defina a largura dos botões para 100 pixels */
+    text-align: right;
+    /* Alinhe o texto à direita */
+}
+
+.modal-topics5 li::before {
+    /* Estilize a linha horizontal */
+    content: "";
+    flex: 1;
+    height: 1px;
+    /* Reduza a espessura da linha */
+    background-color: white;
+    margin-left: 60px;
+    /* Adicione um espaçamento à esquerda para afastar a linha do botão */
+}

@@ -55,11 +55,11 @@ function Armstrong() {
             <Modal
                 isOpen={showTopics}
                 onRequestClose={() => setShowTopics(false)}
-                className="modal"
+                className="modal4"
                 overlayClassName="overlay"
             >
                 {/* Conteúdo da modal */}
-                <ul className="modal-topics">
+                <ul className="modal-topics4">
                     <li>
                         <button onClick={() => openLinkInNewTab('/OSonho')}>O sonho</button>
                     </li>

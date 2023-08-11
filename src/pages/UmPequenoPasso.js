@@ -55,11 +55,11 @@ function UmPequenoPasso() {
             <Modal
                 isOpen={showTopics}
                 onRequestClose={() => setShowTopics(false)}
-                className="modal"
+                className="modal5"
                 overlayClassName="overlay"
             >
                 {/* Conteúdo da modal */}
-                <ul className="modal-topics">
+                <ul className="modal-topics5">
                     <li>
                         <button onClick={() => openLinkInNewTab('/OSonho')}>O sonho</button>
                     </li>

@@ -56,11 +56,11 @@ function OSonho() {
       <Modal
         isOpen={showTopics}
         onRequestClose={() => setShowTopics(false)}
-        className="modal"
+        className="modal1"
         overlayClassName="overlay"
       >
         {/* Conteúdo da modal */}
-        <ul className="modal-topics">
+        <ul className="modal-topics1">
           <li>
             <button onClick={() => openLinkInNewTab('/OComeco')}>O começo</button>
           </li>
@@ -130,6 +130,30 @@ function OSonho() {
 
       <div className='imagem1-container4'>
         <img src={require('../img/Kennedy1.jpg')} alt='Imagem do discurso do Kennedy' className='KennedyDiscurso' />
+      </div>
+
+      <div className='conteudo-osonho6'>
+        <h4>Os pilares do Discurso de Kennedy</h4>
+        <ul>
+          <li><b>Competição e Orgulho Nacional:</b> Kennedy percebeu que a exploração lunar serviria como um campo de batalha pacífico para competir com a União Soviética, demonstrando a liderança dos Estados Unidos em tecnologia e engenhosidade.</li>
+          <li><b>Futuro e Inspiração:</b> Ao propor a conquista lunar, Kennedy investiu no futuro da nação e inspirou as gerações vindouras a olhar para as estrelas em busca de oportunidades inexploradas.</li>
+          <li><b>Potencial Científico e Tecnológico:</b> O presidente acreditava que a exploração lunar levaria a avanços científicos e tecnológicos significativos, beneficiando não apenas a exploração espacial, mas também a sociedade como um todo.</li>
+        </ul>
+        <h4>O Legado do Discurso:</h4>
+        <ul>
+          <li>O discurso de Kennedy marcou um ponto de inflexão na exploração espacial, catalisando o compromisso dos Estados Unidos em alcançar a Lua e influenciando profundamente a política espacial do país.
+          </li>
+          <li>Ele deixou um legado duradouro ao enfatizar que a exploração espacial não era apenas um feito científico, mas uma demonstração de coragem, determinação e visão compartilhada para a humanidade.</li>
+        </ul>
+      </div>
+
+      <div className='imagem1-container5'>
+        <img src={require('../img/h-nasa-exei-pyriniko-antidrastira-se-troxia.jpg')} alt='Foguete dos EUA com seu primeiro sátelite' className='firstRocket'/>
+      </div>
+
+      <div className='conteudo-osonho7'>
+        <p>Assim, "Impulso Cósmico: Explorando as Origens do Discurso Visionário de Kennedy" mergulha nas raízes e motivações profundas que deram origem a um discurso que transcendeu o tempo, moldando o curso da exploração espacial e da busca incansável pelo desconhecido.</p>
+        <h4>Obrigado, volte sempre!</h4>
       </div>
 
       {/* Footer */}

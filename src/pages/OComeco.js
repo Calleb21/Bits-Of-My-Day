@@ -55,11 +55,11 @@ function PaginaComeco() {
       <Modal
         isOpen={showTopics}
         onRequestClose={() => setShowTopics(false)}
-        className="modal"
+        className="modal2"
         overlayClassName="overlay"
       >
         {/* Conteúdo da modal */}
-        <ul className="modal-topics">
+        <ul className="modal-topics2">
           <li>
             <button onClick={() => openLinkInNewTab('/OSonho')}>O sonho</button>
           </li>
