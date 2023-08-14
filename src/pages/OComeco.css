@@ -1,49 +1,144 @@
 /* Estilo para o cabeçalho */
 .header2 {
-    background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 5px;
-  }
-  
-  /* Estilo para o logo */
-  .logo2 {
-    width: 70px;
-    margin-right: 0px;
-  }
+  background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 5px;
+}
 
-  .footer2 {
-    color: white;
-    padding: 1px; /* Reduza o padding para deixar o footer menor */
-    text-align: center;
-    font-size: 10px;/* Reduza o tamanho das letras para torná-las menores */
-    height: 56px;
-    background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+/* Estilo para o logo */
+.logo2 {
+  width: 70px;
+  margin-right: 0px;
+}
+
+.footer2 {
+  color: white;
+  padding: 1px;
+  /* Reduza o padding para deixar o footer menor */
+  text-align: center;
+  font-size: 10px;
+  /* Reduza o tamanho das letras para torná-las menores */
+  height: 56px;
+  background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 
 .social-buttons2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .social-button2 {
-    background-color: transparent;
-    color: white;
-    margin: 2px;
-    cursor: pointer;
-    font-size: 10px;
-    border: none;
-    box-shadow: none;
+  background-color: transparent;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 10px;
+  border: none;
+  box-shadow: none;
 }
 
+.titulo-central2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  /* Ajuste a altura conforme necessário */
+}
+
+.titulo-central2 h2 {
+  font-size: 20px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center;
+}
+
+.titulo-central2 p {
+  font-size: 10px;
+}
+
+.imagem2-container1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.logoNasa {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.conteudo-ocomeco1 {
+  text-align: justify;
+  margin: 25px 80px;
+  font-size: 10px;
+}
+
+.conteudo-ocomeco1 h4 {
+  font-size: 13px;
+}
+
+.conteudo-ocomeco1 ul li{
+  margin-bottom: 10px;
+}
+
+.imagem2-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.sputnik {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.segundo-titulo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-bottom: 15px;
+}
+
+.segundo-titulo2 h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.imagem3-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.firstRocketNasa {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.imagem4-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.explosionRocketNasa {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
 .modal2 {
   bottom: -3492px;
@@ -91,5 +186,3 @@
   margin-left: 60px;
   /* Adicione um espaçamento à esquerda para afastar a linha do botão */
 }
-
-
