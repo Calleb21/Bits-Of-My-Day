@@ -1,20 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&display=swap');
+
 .titulo-central1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40vh;
-    /* Ajuste a altura conforme necessário */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .titulo-central1 h2 {
-    font-size: 20px;
-    /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
     text-align: center;
 }
 
 .titulo-central1 p {
     font-size: 10px;
+    font-family: 'Josefin Slab', serif;
 }
 
 .imagem1-container1 {
@@ -33,6 +35,26 @@
     text-align: justify;
     margin: 25px 80px;
     font-size: 10px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.conteudo-osonho1 ul li {
+    margin-bottom: 10px;
+}
+
+.conteudo-osonho1 h4 {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.despedida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 10px;
+    color: rgba(2, 2, 2, 0.73);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .imagem1-container2 {
@@ -46,12 +68,6 @@
     height: auto;
     margin-bottom: 15px;
     margin-top: 15px;
-}
-
-.conteudo-osonho2 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
 }
 
 .segundo-titulo1 {
@@ -76,40 +92,6 @@
     margin-left: 40px;
 }
 
-.conteudo-osonho3 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-}
-
-.conteudo-osonho4 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-}
-
-.conteudo-osonho4 ul li {
-    margin-bottom: 10px;
-}
-
-.conteudo-osonho4 h4 {
-    font-size: 13px;
-}
-
-.conteudo-osonho5 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-}
-
-.conteudo-osonho5 ul li {
-    margin-bottom: 10px;
-}
-
-.conteudo-osonho5 h4 {
-    font-size: 13px;
-}
-
 .KennedyDiscurso {
     text-align: justify;
     max-width: 90%;
@@ -117,20 +99,6 @@
     margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 40px;
-}
-
-.conteudo-osonho6 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-}
-
-.conteudo-osonho6 ul li {
-    margin-bottom: 10px;
-}
-
-.conteudo-osonho6 h4 {
-    font-size: 13px;
 }
 
 .imagem1-container5 {
@@ -142,22 +110,8 @@
     margin-left: 45px;
 }
 
-.conteudo-osonho7 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-}
-
-.conteudo-osonho7 h4 {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    font-size: 10px;
-    text-align: center;
-    color: #000000b8;
-}
-
 .modal1 {
-    bottom: -3492px;
+    bottom: -3368px;
 }
 
 /* Estilo para os tópicos dentro da modal */

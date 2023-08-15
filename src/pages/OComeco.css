@@ -1,50 +1,4 @@
-/* Estilo para o cabeçalho */
-.header2 {
-  background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  padding: 5px;
-}
-
-/* Estilo para o logo */
-.logo2 {
-  width: 70px;
-  margin-right: 0px;
-}
-
-.footer2 {
-  color: white;
-  padding: 1px;
-  /* Reduza o padding para deixar o footer menor */
-  text-align: center;
-  font-size: 10px;
-  /* Reduza o tamanho das letras para torná-las menores */
-  height: 56px;
-  background-image: url(../3442970\ \(1\)-fotor-20230808122722.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-}
-
-.social-buttons2 {
-  display: flex;
-  justify-content: center;
-}
-
-.social-button2 {
-  background-color: transparent;
-  color: white;
-  margin: 2px;
-  cursor: pointer;
-  font-size: 10px;
-  border: none;
-  box-shadow: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&display=swap');
 
 .titulo-central2 {
   display: flex;
@@ -52,17 +6,17 @@
   justify-content: center;
   align-items: center;
   height: 40vh;
-  /* Ajuste a altura conforme necessário */
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .titulo-central2 h2 {
   font-size: 20px;
-  /* Ajuste o tamanho da fonte conforme necessário */
   text-align: center;
 }
 
 .titulo-central2 p {
   font-size: 10px;
+  font-family: 'Josefin Slab', serif;
 }
 
 .imagem2-container1 {
@@ -81,13 +35,15 @@
   text-align: justify;
   margin: 25px 80px;
   font-size: 10px;
+  font-family: 'Josefin Slab', serif;
 }
 
 .conteudo-ocomeco1 h4 {
   font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.conteudo-ocomeco1 ul li{
+.conteudo-ocomeco1 ul li {
   margin-bottom: 10px;
 }
 
@@ -100,14 +56,6 @@
 .sputnik {
   max-width: 80%;
   height: auto;
-  margin-bottom: 15px;
-}
-
-.segundo-titulo2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
   margin-bottom: 15px;
 }
 
@@ -140,8 +88,56 @@
   margin-bottom: 15px;
 }
 
+.imagem5-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.mercuryNasa {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.imagem6-container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.mercurySeven {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.imagem7-container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.capsulaGemini {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.imagem8-container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.simboloGemini {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
 .modal2 {
-  bottom: -3492px;
+  bottom: -6601px;
 }
 
 /* Estilo para os tópicos dentro da modal */
