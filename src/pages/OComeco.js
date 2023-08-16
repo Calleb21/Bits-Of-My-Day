@@ -64,7 +64,7 @@ function PaginaComeco() {
             <button onClick={() => openLinkInNewTab('/OSonho')}>O sonho</button>
           </li>
           <li>
-            <button onClick={() => openLinkInNewTab('/AMissao')}>A missão</button>
+            <button onClick={() => openLinkInNewTab('/Apollo')}>Apollo</button>
           </li>
           <li>
             <button onClick={() => openLinkInNewTab('/Armstrong')}>Armstrong</button>
@@ -80,7 +80,7 @@ function PaginaComeco() {
         <p>Apollo's Legacy © 2023</p>
       </div>
 
-      <div className='imagem2-container1'>
+      <div className='imagem1-container2'>
         <img src={require('../img/flat,1000x1000,075,f.u2.jpg')} alt='Imagem do logo da NASA' className='logoNasa' />
       </div>
 

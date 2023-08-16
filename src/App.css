@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&family=Source+Code+Pro:wght@500&display=swap');
+
 
 /* Estilo para o cabeçalho */
 .header {
@@ -11,6 +13,8 @@
   justify-content: space-between;
   color: white;
   padding: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 /* Estilo para o logo */
@@ -48,15 +52,18 @@
 /* Estilo para o conteúdo da modal */
 .ReactModal__Content {
   position: absolute;
-  top: 95px; /* Ajuste a posição vertical da modal (distância do topo em pixels) */
-  right: 1px; /* Ajuste a posição horizontal da modal (distância da direita em pixels) */
-  bottom: -2144px;
+  top: 84px;
+  /* Ajuste a posição vertical da modal (distância do topo em pixels) */
+  right: 1px;
+  /* Ajuste a posição horizontal da modal (distância da direita em pixels) */
+  bottom: -2134px;
   background-color: rgba(0, 0, 0, 0.79);
   color: white;
-  padding: 20px 20px 80px; /* Ajuste o padding para espaçamento interno desejado */
+  padding: 20px 20px 80px;
+  /* Ajuste o padding para espaçamento interno desejado */
   width: 160px;
-  text-align: right; /* Alinhe o conteúdo à direita */
-  
+  text-align: right;
+  /* Alinhe o conteúdo à direita */
 }
 
 
@@ -69,7 +76,8 @@
 }
 
 .modal-topics li {
-  margin-bottom: 6px; /* Reduza o espaçamento entre os itens da lista */
+  margin-bottom: 6px;
+  /* Reduza o espaçamento entre os itens da lista */
   display: flex;
   align-items: center;
 }
@@ -77,22 +85,29 @@
 .modal-topics li button {
   background-color: transparent;
   color: white;
-  border: none; /* Remova a borda */
+  border: none;
+  /* Remova a borda */
   cursor: pointer;
   font-size: 10px;
-  padding: 2px; /* Adicione a borda inferior com maior largura */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.422); /* Reduza a espessura da linha */
-  width: 100px; /* Defina a largura dos botões para 100 pixels */
-  text-align: right; /* Alinhe o texto à direita */
+  padding: 2px;
+  /* Adicione a borda inferior com maior largura */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.422);
+  /* Reduza a espessura da linha */
+  width: 100px;
+  /* Defina a largura dos botões para 100 pixels */
+  text-align: right;
+  /* Alinhe o texto à direita */
 }
 
 .modal-topics li::before {
   /* Estilize a linha horizontal */
   content: "";
   flex: 1;
-  height: 1px; /* Reduza a espessura da linha */
+  height: 1px;
+  /* Reduza a espessura da linha */
   background-color: white;
-  margin-left: 60px; /* Adicione um espaçamento à esquerda para afastar a linha do botão */
+  margin-left: 60px;
+  /* Adicione um espaçamento à esquerda para afastar a linha do botão */
 }
 
 
@@ -179,15 +194,18 @@
 /* Estilo para o rodapé */
 .footer {
   color: white;
-  padding: 1px; /* Reduza o padding para deixar o footer menor */
+  padding: 1px;
+  /* Reduza o padding para deixar o footer menor */
   text-align: center;
-  font-size: 10px; /* Reduza o tamanho das letras para torná-las menores */
+  font-size: 10px;
+  /* Reduza o tamanho das letras para torná-las menores */
   height: 56px;
   background-image: url(./3442970\ \(1\)-fotor-20230808122722.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
   font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .social-buttons {
@@ -204,6 +222,7 @@
   border: none;
   box-shadow: none;
   font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 /* Estilo para o contêiner do botão "O começo" */
@@ -219,6 +238,7 @@
   /* Espaçamento interno da caixa */
   border-radius: 0px;
   /* Cantos arredondados */
+
 }
 
 /* Estilo para o botão "O começo" */

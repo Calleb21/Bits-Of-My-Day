@@ -19,7 +19,7 @@
   font-family: 'Josefin Slab', serif;
 }
 
-.imagem2-container1 {
+.imagem1-container2 {
   display: flex;
   justify-content: center;
   margin-top: 1px;
@@ -137,7 +137,7 @@
 }
 
 .modal2 {
-  bottom: -6601px;
+  bottom: -6591px;
 }
 
 /* Estilo para os tópicos dentro da modal */

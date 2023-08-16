@@ -65,7 +65,7 @@ function OSonho() {
             <button onClick={() => openLinkInNewTab('/OComeco')}>O começo</button>
           </li>
           <li>
-            <button onClick={() => openLinkInNewTab('/AMissao')}>A missão</button>
+            <button onClick={() => openLinkInNewTab('/Apollo')}>Apollo</button>
           </li>
           <li>
             <button onClick={() => openLinkInNewTab('/Armstrong')}>Armstrong</button>

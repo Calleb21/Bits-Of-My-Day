@@ -67,7 +67,7 @@ function Armstrong() {
                         <button onClick={() => openLinkInNewTab('/OComeco')}>O começo</button>
                     </li>
                     <li>
-                        <button onClick={() => openLinkInNewTab('/AMissao')}>A missão</button>
+                        <button onClick={() => openLinkInNewTab('/Apollo')}>Apollo</button>
                     </li>
                     <li>
                         <button onClick={() => openLinkInNewTab('/UmPequenoPasso')}>Um pequeno passo</button>

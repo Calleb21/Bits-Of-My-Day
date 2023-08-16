@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import OSonho from './pages/OSonho';
 import OComeco from './pages/OComeco';
-import AMissao from './pages/AMissao';
+import Apollo from './pages/Apollo';
 import Armstrong from './pages/Armstrong';
 import UmPequenoPasso from './pages/UmPequenoPasso';
 
@@ -74,8 +74,8 @@ function App() {
       </div>
       <div className="background-image2">
         <div className="start-button2-container">
-          <Link to="/AMissao" target='_blank'>
-            <button className="start-button2">A missão</button>
+          <Link to="/Apollo" target='_blank'>
+            <button className="start-button2">Apollo</button>
           </Link>
         </div>
       </div>
@@ -110,7 +110,7 @@ function App() {
             <button onClick={() => openLinkInNewTab('/OComeco')}>O começo</button>
           </li>
           <li>
-            <button onClick={() => openLinkInNewTab('/AMissao')}>A missão</button>
+            <button onClick={() => openLinkInNewTab('/Apollo')}>Apollo</button>
           </li>
           <li>
             <button onClick={() => openLinkInNewTab('/Armstrong')}>Armstrong</button>
@@ -154,7 +154,7 @@ export default function RootComponent() {
       <Routes>
         <Route path="/OSonho" element={<OSonho />} />
         <Route path="/OComeco" element={<OComeco />} />
-        <Route path="/AMissao" element={<AMissao />} />
+        <Route path="/Apollo" element={<Apollo />} />
         <Route path="/Armstrong" element={<Armstrong />} />
         <Route path="/UmPequenoPasso" element={<UmPequenoPasso />} />
         <Route path="/" element={<App />} />
