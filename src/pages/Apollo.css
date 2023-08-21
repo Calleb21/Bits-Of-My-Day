@@ -93,10 +93,29 @@
 }
 
 
+.imagem5-container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
 
+.Apollo1 {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+}
 
+.imagem6-container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
 
-
+.Apollo1Explosion {
+    max-width: 55%;
+    height: auto;
+    margin-bottom: 15px;
+}
 
 
 

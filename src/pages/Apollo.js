@@ -158,6 +158,51 @@ function Apollo() {
                 <p>Essa combinação de módulos permitiu que os astronautas viajassem para a Lua, explorassem sua superfície e retornassem em segurança. Cada módulo desempenhou um papel crítico, trabalhando em conjunto para realizar uma das maiores conquistas da exploração espacial: levar seres humanos à Lua e trazê-los de volta à Terra.</p>
             </div>
 
+            <div className='titulo-central3'>
+                <h2>Conquistando o Espaço Profundo: As Épicas Missões Apollo para a Lua</h2>
+            </div>
+
+            <div className='imagem5-container3'>
+                <img src={require('../img/588915b3ca5ed.image.jpg')} alt='Tripulantes da missão Apollo 1'
+                    className='Apollo1' />
+            </div>
+
+            <div className='conteudo-apollo1'>
+                <p>A missão Apollo 1 foi a primeira designação dada a uma missão tripulada do Programa Apollo da NASA. No entanto, a Apollo 1 é mais lembrada pela tragédia que a envolveu do que por qualquer realização espacial. Aqui está o que aconteceu:</p>
+                <h4>Tripulação:</h4>
+                <ul>
+                    <li>A tripulação da Apollo 1 era composta por três astronautas: Virgil "Gus" Grissom, Edward H. White II e Roger B. Chaffee.</li>
+                </ul>
+                <h4>Objetivos:</h4>
+                <ul>
+                    <li>A Apollo 1 estava programada para ser uma missão não tripulada que testaria a espaçonave Apollo em órbita terrestre baixa.</li>
+                    <li>Os objetivos incluíam testar sistemas de suporte de vida, sistemas de propulsão e comunicações em preparação para as missões subsequentes.</li>
+                    <h4>A Tragédia:</h4>
+                    <li>Em 27 de janeiro de 1967, durante um teste de pré-lançamento na Plataforma de Lançamento 34 do Centro Espacial Kennedy na Flórida, um incêndio violento eclodiu no módulo de comando da Apollo 1.</li>
+                    <li>Os astronautas estavam dentro do módulo na época, e o incêndio se espalhou rapidamente, impedindo sua evacuação. A tragédia resultou na perda trágica das vidas dos três astronautas.</li>
+                </ul>
+            </div>
+
+            <div className='imagem6-container3'>
+                <img src={require('../img/OIP.jpg')} alt='Capsula queimada da missão Apollo 1'
+                    className='Apollo1Explosion' />
+            </div>
+
+            <div className='conteudo-apollo1'>
+                <h4>Causas e Lições Aprendidas:</h4>
+                <ul>
+                    <li>A investigação subsequente revelou que o incêndio foi causado por uma combinação de falhas elétricas, sistemas de pressurização de oxigênio puro e materiais inflamáveis no interior da cápsula.</li>
+                    <li>A tragédia da Apollo 1 levou a uma revisão completa dos procedimentos de segurança e design da espaçonave Apollo.</li>
+                    <li>Foram implementadas melhorias significativas, como a substituição do oxigênio puro por uma mistura mais segura de oxigênio e nitrogênio, sistemas de proteção contra incêndios aprimorados e revisões de procedimentos de teste.</li>
+                </ul>
+                <h4>Impacto: </h4>
+                <ul>
+                    <li>Embora a Apollo 1 tenha sido uma tragédia devastadora, suas lições ajudaram a aprimorar a segurança das missões Apollo subsequentes.</li>
+                    <li>O programa espacial dos Estados Unidos continuou após a tragédia, e a Apollo 7 se tornou a primeira missão tripulada da série em outubro de 1968.</li>
+                </ul>
+                <p>A Apollo 1 é lembrada como um lembrete doloroso dos riscos e desafios da exploração espacial. As vidas perdidas na tragédia nunca serão esquecidas, e suas contribuições para a exploração espacial continuam a ser lembradas à medida que a humanidade avança em direção às estrelas.</p>
+            </div>
+
             {/* Footer */}
             <footer className="footer">
                 <p>Apollo's Legacy © 2023 | by Calleb Camargo</p>
