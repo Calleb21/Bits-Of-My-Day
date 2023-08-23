@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&family=Nunito:wght@200&family=Source+Code+Pro:wght@500&display=swap');
 
 .titulo-central3 {
     display: flex;
@@ -6,17 +6,18 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .titulo-central3 h2 {
     font-size: 20px;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .titulo-central3 p {
     font-size: 10px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .imagem1-container3 {
@@ -35,12 +36,12 @@
     text-align: justify;
     margin: 25px 80px;
     font-size: 10px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .conteudo-apollo1 h4 {
     font-size: 13px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .conteudo-apollo1 ul li {
@@ -52,8 +53,8 @@
 }
 
 .conteudo-apollo1 strong {
-    font-size: 12px;
-    font-style: oblique;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .imagem2-container3 {
@@ -116,6 +117,19 @@
     height: auto;
     margin-bottom: 15px;
 }
+
+.imagem7-container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.Apollo7 {
+    max-width: 55%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 
 
 

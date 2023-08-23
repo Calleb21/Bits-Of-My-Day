@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&family=Nunito:wght@200&family=Source+Code+Pro:wght@500&display=swap');
 
 .titulo-central1 {
     display: flex;
@@ -6,17 +6,18 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .titulo-central1 h2 {
     font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .titulo-central1 p {
     font-size: 10px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .imagem1-container1 {
@@ -35,7 +36,7 @@
     text-align: justify;
     margin: 25px 80px;
     font-size: 10px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .conteudo-osonho1 ul li {
@@ -44,7 +45,7 @@
 
 .conteudo-osonho1 h4 {
     font-size: 13px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .despedida {
@@ -54,7 +55,7 @@
     height: 100px;
     font-size: 10px;
     color: rgba(2, 2, 2, 0.73);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .imagem1-container2 {

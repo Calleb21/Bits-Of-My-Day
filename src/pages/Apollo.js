@@ -203,6 +203,45 @@ function Apollo() {
                 <p>A Apollo 1 é lembrada como um lembrete doloroso dos riscos e desafios da exploração espacial. As vidas perdidas na tragédia nunca serão esquecidas, e suas contribuições para a exploração espacial continuam a ser lembradas à medida que a humanidade avança em direção às estrelas.</p>
             </div>
 
+            <div className='titulo-central3'>
+                <h2>O Renascimento do Programa Apollo</h2>
+            </div>
+
+            <div className='imagem7-container3'>
+                <img src={require('../img/375px-Apollo7.png')} alt='Emblema da Apollo 7'
+                    className='Apollo7' />
+            </div>
+
+            <div className='conteudo-apollo1'>
+                <p>A missão Apollo 7, lançada em 11 de outubro de 1968, marcou um ponto de viragem crucial no Programa Apollo da NASA e na exploração espacial como um todo. Após a tragédia da Apollo 1, que resultou na perda de três astronautas em um incêndio durante um teste em solo, a Apollo 7 foi a primeira missão tripulada do programa e um teste crítico de sistemas que estavam sendo aprimorados após as lições dolorosas da Apollo 1.</p>
+                <h4>Objetivos Complexos:</h4>
+                <ol>
+                    <li><strong>Testar o Módulo de Comando e Serviço (CSM):</strong> O principal objetivo da Apollo 7 era verificar a funcionalidade e a segurança do Módulo de Comando e Serviço (CSM) em órbita terrestre. Era imperativo garantir que o CSM estivesse em condições de levar astronautas em futuras missões lunares.</li>
+                    <li><strong>Realizar Experimentos Científicos:</strong> A missão também tinha um componente científico, com experimentos planejados para coletar dados sobre a radiação no espaço, a física do ambiente lunar e outros fenômenos.</li>
+                    <li><strong>Testar Novos Sistemas:</strong>  A Apollo 7 foi uma oportunidade para testar sistemas de suporte de vida, sistemas de propulsão, sistemas de comunicação e sistemas de controle de navegação em órbita.</li>
+                </ol>
+                <h4>Tripulação Destemida:</h4>
+                <ul>
+                    <li>A tripulação da Apollo 7 era composta por três astronautas corajosos: Walter Schirra, Donn Eisele e Walter Cunningham. Schirra era um veterano de missões anteriores, enquanto Eisele e Cunningham estavam voando ao espaço pela primeira vez.</li>
+                </ul>
+                <h4>Realizações Notáveis:</h4>
+                <ul>
+                    <li>A Apollo 7 foi a primeira missão a transmitir ao vivo na televisão a partir do espaço. Isso permitiu que o público em todo o mundo acompanhasse as atividades da tripulação e testemunhasse a vida no espaço.</li>
+                    <li>A missão testou o CSM em uma órbita circular baixa da Terra, realizando uma série de manobras para avaliar o desempenho do sistema.</li>
+                    <li>Os astronautas conduziram uma série de experimentos científicos, incluindo medições de radiação solar e observações da Terra.</li>
+                </ul>
+                <h4>Legado e Impacto:</h4>
+                <ul>
+                    <li>A Apollo 7 foi um sucesso notável e vital. Ela demonstrou que as correções de segurança após a Apollo 1 haviam sido eficazes e que a NASA estava pronta para continuar com missões tripuladas em direção à Lua.</li>
+                    <li>O lançamento bem-sucedido da Apollo 7 abriu caminho para o lançamento do poderoso foguete Saturn V e para as missões lunares subsequentes, que culminaram com o histórico pouso da Apollo 11 na Lua em 1969.</li>
+                </ul>
+                <p>A Apollo 7 não só provou a resiliência do programa Apollo, mas também foi um marco na história da exploração espacial. Ela preparou o terreno para as missões que viriam a seguir e solidificou a determinação da NASA de alcançar o objetivo ambicioso de pousar seres humanos na Lua e trazê-los em segurança de volta à Terra.</p>
+                <h4>Curiosidades: </h4>
+                <p>A razão pela qual a missão Apollo 1 foi seguida pela Apollo 7, em vez de uma sequência numérica direta, é devido a uma série de fatores relacionados à tragédia da Apollo 1 e ao processo de investigação e reformulação do programa.</p>
+                <p>As investigações revelaram falhas de segurança, incluindo problemas com os sistemas de cabos elétricos e uma atmosfera rica em oxigênio puro, que contribuíram para a rápida propagação do fogo. Como resultado, uma série de revisões e melhorias foram feitas no projeto e na preparação de futuras missões.</p>
+                <p>A decisão de renomear a próxima missão tripulada como Apollo 7 refletiu a necessidade de reiniciar o programa com um novo começo após a tragédia. As missões subsequentes foram numeradas de forma consecutiva, começando com a Apollo 7, para continuar a progressão do programa e honrar a memória dos astronautas perdidos na Apollo 1. A Apollo 7 foi bem-sucedida e marcou o retorno das missões tripuladas, pavimentando o caminho para o programa Apollo seguir em frente em direção à conquista lunar.</p>
+            </div>
+
             {/* Footer */}
             <footer className="footer">
                 <p>Apollo's Legacy © 2023 | by Calleb Camargo</p>
