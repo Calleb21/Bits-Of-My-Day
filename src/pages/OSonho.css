@@ -1,159 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&family=Nunito:wght@200&family=Source+Code+Pro:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Josefin+Slab:ital,wght@0,600;1,400;1,700&family=Nunito:wght@200&family=Source+Code+Pro:wght@500&display=swap");
 
 .titulo-central1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-family: "Nunito", sans-serif;
 }
 
 .titulo-central1 h2 {
-    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
+  font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 
 .titulo-central1 p {
-    font-size: 10px;
-    font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  font-family: "Nunito", sans-serif;
 }
 
 .imagem1-container1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
 }
 
 .imagemLua {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .conteudo-osonho1 {
-    text-align: justify;
-    margin: 25px 80px;
-    font-size: 10px;
-    font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  margin: 25px 80px;
+  font-size: 10px;
+  font-family: "Nunito", sans-serif;
 }
 
 .conteudo-osonho1 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .conteudo-osonho1 h4 {
-    font-size: 13px;
-    font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
 }
 
 .despedida {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    font-size: 10px;
-    color: rgba(2, 2, 2, 0.73);
-    font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 10px;
+  color: rgba(2, 2, 2, 0.73);
+  font-family: "Nunito", sans-serif;
 }
 
 .imagem1-container2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
 }
 
 .imagemTelescopio {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .segundo-titulo1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-bottom: 15px;
 }
 
 .segundo-titulo1 h2 {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 
 .imgGuerraFria {
-    text-align: justify;
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 40px;
+  text-align: justify;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 40px;
 }
 
 .KennedyDiscurso {
-    text-align: justify;
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 40px;
+  text-align: justify;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 40px;
 }
 
 .imagem1-container5 {
-    text-align: justify;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 45px;
+  text-align: justify;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 45px;
 }
 
 .modal1 {
-    bottom: -3358px;
+  bottom: -3590px;
 }
 
 /* Estilo para os tópicos dentro da modal */
 .modal-topics1 {
-    list-style-type: none;
-    text-align: left;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-topics1 li {
-    margin-bottom: 6px;
-    /* Reduza o espaçamento entre os itens da lista */
-    display: flex;
-    align-items: center;
+  margin-bottom: 6px;
+  /* Reduza o espaçamento entre os itens da lista */
+  display: flex;
+  align-items: center;
 }
 
 .modal-topics1 li button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    /* Remova a borda */
-    cursor: pointer;
-    font-size: 10px;
-    padding: 2px;
-    /* Adicione a borda inferior com maior largura */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.422);
-    /* Reduza a espessura da linha */
-    width: 100px;
-    /* Defina a largura dos botões para 100 pixels */
-    text-align: right;
-    /* Alinhe o texto à direita */
+  background-color: transparent;
+  color: white;
+  border: none;
+  /* Remova a borda */
+  cursor: pointer;
+  font-size: 10px;
+  padding: 2px;
+  /* Adicione a borda inferior com maior largura */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.422);
+  /* Reduza a espessura da linha */
+  width: 100px;
+  /* Defina a largura dos botões para 100 pixels */
+  text-align: right;
+  /* Alinhe o texto à direita */
 }
 
 .modal-topics1 li::before {
-    /* Estilize a linha horizontal */
-    content: "";
-    flex: 1;
-    height: 1px;
-    /* Reduza a espessura da linha */
-    background-color: white;
-    margin-left: 60px;
-    /* Adicione um espaçamento à esquerda para afastar a linha do botão */
+  /* Estilize a linha horizontal */
+  content: "";
+  flex: 1;
+  height: 1px;
+  /* Reduza a espessura da linha */
+  background-color: white;
+  margin-left: 60px;
+  /* Adicione um espaçamento à esquerda para afastar a linha do botão */
 }
