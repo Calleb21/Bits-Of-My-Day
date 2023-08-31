@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description of ClienteDAO
@@ -92,4 +94,52 @@ public class ClienteDAO implements IClienteDAO {
             }
         }
     }
+
+    @Override
+    public List<Cliente> buscarTodos() throws Exception {
+        Connection connection = null;
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        List<Cliente> list = new ArrayList<>();
+        try {
+            connection = ConnectionFactory.getConnection();
+            String sql = getSqlSelectAll();
+            stm = connection.prepareStatement(sql);
+            rs = stm.executeQuery();
+
+            while (rs.next()) {
+                Cliente cliente = new Cliente();
+                String nome = rs.getString("NOME");
+                String codigo = rs.getString("CODIGO");
+                Long id = rs.getLong("ID");
+                cliente.setNome(nome);
+                cliente.setCodigo(codigo);
+                cliente.setId(id);
+                list.add(cliente);
+            }
+        } catch(Exception e) {
+            throw e;
+        } finally {
+            if (rs != null) {
+                rs.close();
+            }
+            if (stm != null && !stm.isClosed()) {
+                stm.close();
+            }
+            if (connection != null && !connection.isClosed()) {
+                connection.close();
+            }
+        }
+        return list;
+    }
+
+
+    private String getSqlSelectAll() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT * FROM cliente");
+        return sb.toString();
+    }
 }
+
+
+

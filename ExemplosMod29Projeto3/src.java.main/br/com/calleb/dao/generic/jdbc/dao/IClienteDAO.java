@@ -2,6 +2,8 @@ package br.com.calleb.dao.generic.jdbc;
 
 import br.com.calleb.domain.Cliente;
 
+import java.util.List;
+
 /**
  * Description of IClienteDAO
  * Created by calle on 30/08/2023.
@@ -13,4 +15,6 @@ public interface IClienteDAO {
     Cliente consultar(String codigo) throws Exception;
 
     Integer excluir(Cliente clienteBD) throws Exception;
+
+    List<Cliente> buscarTodos() throws Exception;
 }

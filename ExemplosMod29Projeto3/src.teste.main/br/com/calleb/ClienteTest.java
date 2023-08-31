@@ -5,6 +5,8 @@ import br.com.calleb.dao.generic.jdbc.dao.ClienteDAO;
 import br.com.calleb.domain.Cliente;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 /**
@@ -13,6 +15,8 @@ import static org.junit.Assert.*;
  */
 public class ClienteTest {
 
+    private IClienteDAO clienteDAO;
+
     @Test
     public void cadastrarTest() throws Exception {
         IClienteDAO dao = new ClienteDAO();
@@ -20,19 +24,67 @@ public class ClienteTest {
         Cliente cliente = new Cliente();
         cliente.setCodigo("01");
         cliente.setNome("Calleb Camargo");
-
         Integer qtd = dao.cadastrar(cliente);
         assertTrue(qtd == 1);
 
-        Cliente clienteBD = dao.consultar(cliente.getCodigo());
+        Cliente cliente1 = new Cliente();
+        cliente1.setCodigo("03");
+        cliente1.setNome("Lionel Messi");
+        Integer qtd1 = dao.cadastrar(cliente1);
+        assertTrue(qtd1 == 1);
+    }
+
+
+    @Test
+    public void consultarTest() throws Exception {
+        clienteDAO = new ClienteDAO();
+
+        Cliente cliente = new Cliente();
+        cliente.setCodigo("01");
+        cliente.setNome("Calleb Camargo");
+        Integer qtd = clienteDAO.cadastrar(cliente);
+        assertTrue(qtd == 1);
+
+        Cliente clienteBD = clienteDAO.consultar(cliente.getCodigo());
         assertNotNull(clienteBD);
         assertNotNull(clienteBD.getId());
         assertEquals(cliente.getCodigo(), clienteBD.getCodigo());
         assertEquals(cliente.getNome(), clienteBD.getNome());
-
-        Integer qtdDel = dao.excluir(clienteBD);
-        assertNotNull(qtdDel);
+    }
 
 
+    @Test
+    public void buscarTodosTest() throws Exception {
+        clienteDAO = new ClienteDAO();
+
+        try {
+            List<Cliente> clientes = clienteDAO.buscarTodos();
+
+            assertNotNull(clientes);
+
+            assertTrue(clientes.size() > 0);
+
+        } catch (Exception e) {
+            fail("O teste lançou uma exceção: " + e.getMessage());
+        }
+    }
+
+    @Test
+    public void excluirTest() throws Exception {
+        clienteDAO = new ClienteDAO();
+
+        Cliente cliente = new Cliente();
+        cliente.setCodigo("02");
+        cliente.setNome("Rayane Lopes");
+        Integer countCad = clienteDAO.cadastrar(cliente);
+        assertTrue(countCad == 1);
+
+        Cliente clienteBD = clienteDAO.consultar("02");
+        assertNotNull(clienteBD);
+        assertEquals(cliente.getCodigo(), clienteBD.getCodigo());
+        assertEquals(cliente.getNome(), clienteBD.getNome());
+
+        Integer countDel = clienteDAO.excluir(clienteBD);
+        assertTrue(countDel == 1);
     }
 }
