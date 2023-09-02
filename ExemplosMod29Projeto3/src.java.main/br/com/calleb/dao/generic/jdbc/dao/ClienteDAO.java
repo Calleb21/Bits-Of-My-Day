@@ -40,6 +40,35 @@ public class ClienteDAO implements IClienteDAO {
     }
 
     @Override
+    public Integer atualizar(Cliente cliente) throws Exception {
+        Connection connection = null;
+        PreparedStatement stm = null;
+        try {
+            connection = ConnectionFactory.getConnection();
+            String sql = "UPDATE cliente SET codigo = ?, nome = ? WHERE id = ? ";
+            stm = connection.prepareStatement(sql);
+            stm.setString(1, cliente.getCodigo());
+            stm.setString(2, cliente.getNome());
+            stm.setLong(3, cliente.getId());
+            return stm.executeUpdate();
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            try {
+                if (stm != null) {
+                    stm.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                // Lidar com erros de fechamento, se necessário.
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
     public Cliente consultar(String codigo) throws SQLException {
         Connection connection = null;
         PreparedStatement stm = null;
@@ -117,7 +146,7 @@ public class ClienteDAO implements IClienteDAO {
                 cliente.setId(id);
                 list.add(cliente);
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw e;
         } finally {
             if (rs != null) {
@@ -132,7 +161,6 @@ public class ClienteDAO implements IClienteDAO {
         }
         return list;
     }
-
 
     private String getSqlSelectAll() {
         StringBuilder sb = new StringBuilder();

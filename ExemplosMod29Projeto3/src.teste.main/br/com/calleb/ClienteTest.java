@@ -32,6 +32,12 @@ public class ClienteTest {
         cliente1.setNome("Lionel Messi");
         Integer qtd1 = dao.cadastrar(cliente1);
         assertTrue(qtd1 == 1);
+
+        Cliente cliente2 = new Cliente();
+        cliente2.setCodigo("02");
+        cliente2.setNome("Rayane Lopes");
+        Integer qtd2 = dao.cadastrar(cliente2);
+        assertTrue(qtd2 == 1);
     }
 
 
@@ -40,8 +46,8 @@ public class ClienteTest {
         clienteDAO = new ClienteDAO();
 
         Cliente cliente = new Cliente();
-        cliente.setCodigo("01");
-        cliente.setNome("Calleb Camargo");
+        cliente.setCodigo("04");
+        cliente.setNome("Neymar Junior");
         Integer qtd = clienteDAO.cadastrar(cliente);
         assertTrue(qtd == 1);
 
@@ -74,17 +80,47 @@ public class ClienteTest {
         clienteDAO = new ClienteDAO();
 
         Cliente cliente = new Cliente();
-        cliente.setCodigo("02");
-        cliente.setNome("Rayane Lopes");
+        cliente.setCodigo("05");
+        cliente.setNome("Neymar Santos");
         Integer countCad = clienteDAO.cadastrar(cliente);
         assertTrue(countCad == 1);
 
-        Cliente clienteBD = clienteDAO.consultar("02");
+        Cliente clienteBD = clienteDAO.consultar("05");
         assertNotNull(clienteBD);
         assertEquals(cliente.getCodigo(), clienteBD.getCodigo());
         assertEquals(cliente.getNome(), clienteBD.getNome());
 
         Integer countDel = clienteDAO.excluir(clienteBD);
         assertTrue(countDel == 1);
+    }
+
+    @Test
+    public void atualizarTest() throws Exception {
+        clienteDAO = new ClienteDAO();
+
+        Cliente cliente = new Cliente();
+        cliente.setCodigo("04");
+        cliente.setNome("Bruna Marquezine");
+        Integer countCad = clienteDAO.cadastrar(cliente);
+        assertTrue(countCad == 1);
+
+        Cliente clienteBD = clienteDAO.consultar("04");
+        assertNotNull(clienteBD);
+        assertEquals(cliente.getCodigo(), clienteBD.getCodigo());
+        assertEquals(cliente.getNome(), clienteBD.getNome());
+
+        clienteBD.setCodigo("07");
+        clienteBD.setNome("Bruna Biancardi"); // Atualiza o nome
+        Integer atualizarNome = clienteDAO.atualizar(clienteBD);
+        assertTrue(atualizarNome == 1);
+
+        Cliente clienteBD1 = clienteDAO.consultar("04");
+        assertNull(clienteBD1);
+
+        Cliente clienteBD2 = clienteDAO.consultar("07");
+        assertNotNull(clienteBD2);
+        assertEquals(clienteBD.getId(), clienteBD2.getId());
+        assertEquals(clienteBD.getCodigo(), clienteBD2.getCodigo());
+        assertEquals(clienteBD.getNome(), clienteBD2.getNome());
     }
 }
