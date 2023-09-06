@@ -96,7 +96,6 @@ function Apollo() {
 
       <div className="conteudo-apollo1">
         <p>
-          {" "}
           O Programa Apollo foi um ambicioso esforço espacial conduzido pelos
           Estados Unidos durante a década de 1960 e início dos anos 1970. Criado
           como resposta à corrida espacial com a União Soviética, seu objetivo
