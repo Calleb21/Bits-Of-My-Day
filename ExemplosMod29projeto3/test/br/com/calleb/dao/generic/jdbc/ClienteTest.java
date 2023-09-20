@@ -139,4 +139,11 @@ public class ClienteTest {
         assertTrue(clientes.stream().anyMatch(c -> c.getCodigo().equals(cliente8.getCodigo())));
         assertTrue(clientes.stream().anyMatch(c -> c.getCodigo().equals(cliente9.getCodigo())));
     }
+
+    /**
+     * Description of br.com.calleb.dao.generic.jdbc.ClienteTest.ProdutoTest
+     * Created by calle on 20/09/2023.
+     */
+    public static class ProdutoTest {
+    }
 }
