@@ -1,0 +1,25 @@
+CREATE TABLE alunos (
+id INT PRIMARY KEY,
+nome VARCHAR(255) NOT NULL,
+idade INT,
+curso VARCHAR(100),
+data_de_ingresso DATE
+);
+
+INSERT INTO alunos (id, nome, idade, curso, data_de_ingresso) VALUES
+(1, 'Calleb Camargo', 19, 'Java Backend', '2023-04-15'),
+(2, 'Rayane Lopes', 18, 'Null', '2022-01-12'),
+(3, 'Teste Teste', 32, 'Null', '202-12-21'),
+(4, 'Lidiane Duarte', 40, 'Artesanato', '2022-10-22'),
+(5, 'Wagner Vasconselos', 35, 'Professor', '2022-04-12');
+
+UPDATE alunos 
+SET curso = 'Buscando trampo'
+WHERE id = 2;
+
+UPDATE alunos
+SET curso = 'Curso teste'
+WHERE id = 3;
+
+DELETE FROM alunos
+WHERE id = 3;
