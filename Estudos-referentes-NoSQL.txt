@@ -1,0 +1,40 @@
+Estudos referentes ao NoSQL do curso java backend DIO: 
+
+{
+   "_id":1,
+   "nome":"Calleb Camargo",
+   "idade":19,
+   "data_nascimento":"2004-04-11",
+   "endereco":"Itaguai II, Rua 67, Q 32, Lt 02, S/n",
+   "enderecos":[
+      {
+         "logadouro":"Itaguai II...",
+         "bairro":"Itanhaga 2",
+         "cidade":"Caldas Novas",
+         "estado":"GO"
+      }
+   ],
+   "intereses":[
+      "Futebol",
+      "Formula 1"
+   ],
+   "reservas":[
+      1,
+      2
+   ]
+}
+
+
+
+{
+   "_id":1,
+   "nome":"Parque Ibirapuera",
+   "descricao":"Principal parque de São Paulo",
+   "localizacao":{
+      "type":"Point",
+      "coordenates":[
+         -46.661056,
+         -23.587384
+      ]
+   }
+}
