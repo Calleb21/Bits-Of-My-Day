@@ -1,0 +1,4 @@
+Hoje eu estudei um pouco sobre o JPA e Hibernate, o professor apresentou eles na prática e mostrou como é um projeto quando ambos são utilizados. 
+No curso da DIO, eu aprendi sobre "Contextualizando o Desenvolvimento Web com Spring Boot 3". 
+
+Ambos os cursos apresentarão teória, portanto eu não coloquei a mão na masa, apenas, ampliei meu conhecimento.
