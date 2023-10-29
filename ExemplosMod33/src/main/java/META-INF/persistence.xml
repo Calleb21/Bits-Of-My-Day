@@ -15,7 +15,7 @@
 			<property name="javax.persistence.jdbc.driver"
 				value="org.postgresql.Driver" /> <!-- DB Driver -->
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:postgresql://localhost:15432/vendas_online" /> <!-- BD Mane -->
+				value="jdbc:postgresql://localhost:15432/mod33-ebac" /> <!-- BD Mane -->
 			<property name="javax.persistence.jdbc.user"
 				value="postgres" /> <!-- DB User -->
 			<property name="javax.persistence.jdbc.password"

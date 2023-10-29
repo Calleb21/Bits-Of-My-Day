@@ -1,4 +1,4 @@
-package br.com.calleb;
+ package br.com.calleb;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -38,7 +38,7 @@ public class CursoTest {
 	}
 
 	@Test
-	public void cadastrarTest() {
+	public void cadastrarCursoTest() {
 		Curso cursoTeste = new Curso();
 		cursoTeste.setCodigo("A1");
 		cursoTeste.setNome("Curso de Teste 1");

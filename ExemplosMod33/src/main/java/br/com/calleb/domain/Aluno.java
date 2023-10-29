@@ -87,4 +87,7 @@ public class Aluno {
 	public void setComputadores(List<Computador> computadores) {
 		this.computadores = computadores;
 	}
+
+	public void add(Computador comp) {
+		this.computadores.add(comp);
 }
