@@ -41,7 +41,6 @@ public class Aluno {
 	@ManyToMany(cascade = { CascadeType.ALL })
 	@JoinTable(name = "TB_ALUNO_COMPUTADOR", joinColumns = { @JoinColumn(name = "id_aluno_fk") }, inverseJoinColumns = {
 			@JoinColumn(name = "id_computador_fk") })
-
 	private List<Computador> computadores;
 
 	public Aluno() {
@@ -90,4 +89,5 @@ public class Aluno {
 
 	public void add(Computador comp) {
 		this.computadores.add(comp);
+	}
 }

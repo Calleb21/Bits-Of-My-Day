@@ -49,7 +49,6 @@ public class MatriculaTest {
 		mat.setValor(2000d);
 		mat.setCurso(curso);
 		mat.setAluno(aluno);
-
 		aluno.setMatricula(mat);
 		mat = matriculaDao.cadastrar(mat);
 
@@ -70,7 +69,7 @@ public class MatriculaTest {
 		comp.setCodigo(codigo);
 		comp.setDescricao("Comp 1");
 		return comp;
-		// return computadorDao.cadastrar(comp);
+		//return computadorDao.cadastrar(comp);
 	}
 
 	private Aluno criarAluno(String codigo) {
@@ -78,7 +77,7 @@ public class MatriculaTest {
 		Computador comp2 = criarComputador("A2");
 		Aluno aluno = new Aluno();
 		aluno.setCodigo(codigo);
-		aluno.setNome("Rodrigo");
+		aluno.setNome("Calleb");
 		aluno.add(comp);
 		aluno.add(comp2);
 		return alunoDao.cadastrar(aluno);
