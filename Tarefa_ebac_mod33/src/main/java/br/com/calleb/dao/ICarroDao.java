@@ -4,6 +4,5 @@ import br.com.calleb.domain.Carro;
 
 public interface ICarroDao {
 
-	Carro cadastrar(Carro carroTest);
-
+	Carro cadastrar(Carro carro);
 }

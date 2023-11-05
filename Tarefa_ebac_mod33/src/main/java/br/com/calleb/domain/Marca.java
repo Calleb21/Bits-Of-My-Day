@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -17,19 +18,23 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "TB_MARCA")
 public class Marca {
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "marca_seq")
+	@SequenceGenerator(name = "marca_seq", sequenceName = "sq_marca", initialValue = 1, allocationSize = 1)
 	private Long id;
 
-	@Column(name = "NOME", length = 20, nullable = false, unique = true)
+	@Column(name = "IDENTIFICADOR", length = 10, nullable = false, unique = true)
+	private String identificador;
+
+	@Column(name = "NOME", length = 50, nullable = false)
 	private String nome;
 
-	@Column(name = "TIPO", length = 10, nullable = false, unique = true)
-	private String tipo;
+	@Column(name = "DESCRICAO", length = 100, nullable = false)
+	private String descricao;
 
 	@OneToMany(mappedBy = "marca")
-	private List<Carro> carros;
+	private List<Loja> lojas;
 
 	public Long getId() {
 		return id;
@@ -37,6 +42,14 @@ public class Marca {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getIdentificador() {
+		return identificador;
+	}
+
+	public void setIdentificador(String identificador) {
+		this.identificador = identificador;
 	}
 
 	public String getNome() {
@@ -47,19 +60,19 @@ public class Marca {
 		this.nome = nome;
 	}
 
-	public String getTipo() {
-		return tipo;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
-	public List<Carro> getCarros() {
-		return carros;
+	public List<Loja> getLojas() {
+		return lojas;
 	}
 
-	public void setCarros(List<Carro> carros) {
-		this.carros = carros;
+	public void setLojas(List<Loja> lojas) {
+		this.lojas = lojas;
 	}
 }

@@ -1,5 +1,6 @@
 package br.com.calleb.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -8,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -17,19 +19,24 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "TB_ACESSORIO")
 public class Acessorio {
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "acess_seq")
+	@SequenceGenerator(name = "acess_seq", sequenceName = "sq_acessorio", initialValue = 1, allocationSize = 1)
 	private Long id;
 
-	@Column(name = "NOME", length = 25, nullable = false, unique = true)
-	private String nome;
+	@Column(name = "IDENTIFICADOR", length = 10, nullable = false, unique = true)
+	private String identificador;
 
-	@Column(name = "DESCRICAO", length = 50, nullable = false, unique = true)
+	@Column(name = "DESCRICAO", length = 50, nullable = false)
 	private String descricao;
 
 	@ManyToMany(mappedBy = "acessorios")
 	private List<Carro> carros;
+
+	public Acessorio() {
+		this.carros = new ArrayList<Carro>();
+	}
 
 	public Long getId() {
 		return id;
@@ -39,12 +46,12 @@ public class Acessorio {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getIdentificador() {
+		return identificador;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setIdentificador(String identificador) {
+		this.identificador = identificador;
 	}
 
 	public String getDescricao() {
@@ -61,5 +68,9 @@ public class Acessorio {
 
 	public void setCarros(List<Carro> carros) {
 		this.carros = carros;
+	}
+
+	public void add(Carro carro) {
+		this.carros.add(carro);
 	}
 }

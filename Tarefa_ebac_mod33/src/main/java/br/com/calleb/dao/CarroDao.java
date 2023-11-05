@@ -8,22 +8,18 @@ import br.com.calleb.domain.Carro;
 
 public class CarroDao implements ICarroDao {
 
-	private EntityManagerFactory emf;
-
-	public CarroDao() {
-		emf = Persistence.createEntityManagerFactory("ExemploJPA");
-	}
-
 	@Override
 	public Carro cadastrar(Carro carro) {
-		EntityManager em = emf.createEntityManager();
-		try {
-			em.getTransaction().begin();
-			em.persist(carro);
-			em.getTransaction().commit();
-			return carro;
-		} finally {
-			em.close();
-		}
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ExemploJPA");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+		entityManager.getTransaction().begin();
+		entityManager.persist(carro);
+		entityManager.getTransaction().commit();
+
+		entityManager.close();
+		entityManagerFactory.close();
+
+		return carro;
 	}
 }
