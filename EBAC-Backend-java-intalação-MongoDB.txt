@@ -1,0 +1,5 @@
+No curso da EBAC Backend java, foi ensinado a baixar o MongoDB de duas maneiras: 
+1- Via Web
+2- Via Docker
+
+Não obtive sucesso no via docker e optei em continuar da maneira mais simples, porém, creio que isso não seja uma boa prática. Irei me aprofundar mais sobre a intalação via Docker.
