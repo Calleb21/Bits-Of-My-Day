@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.pizzaria.PizzariaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.389 s -- in com.example.pizzaria.PizzariaApplicationTests
