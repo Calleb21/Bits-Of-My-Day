@@ -22,6 +22,10 @@ main {
     background-color: $primary-color;
   }
 
+  .catal-section {
+    color: white;
+  }
+
   .form-section {
     flex-grow: 0.3;
     padding: 0 35px;
@@ -37,7 +41,7 @@ main {
     }
 
     .btn-wrapper {
-      height: 100%;
+      display: flex;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -58,7 +62,7 @@ main {
 
         div {
           flex-grow: 1;
-          height: 1px;
+          height: 2px;
           background-color: $divider-color;
         }
       }
@@ -71,6 +75,7 @@ main {
         border: none;
         background-color: transparent;
         padding: 12px 24px;
+        cursor: pointer;
 
         &.btn-primary {
           background-color: $button-color;

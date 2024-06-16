@@ -1,6 +1,24 @@
 <app-default-login-layout
-title="Logar com sua conta"
-primaryBtnTxt="Entre Agora"
-secundaryBtnTxt="Cadastre-se Agora"
+  title="Logar com sua conta"
+  primaryBtnTxt="Entre Agora"
+  secundaryBtnTxt="Cadastre-se Agora"
 >
+  <form [formGroup]="loginForm">
+    <app-primary-input
+      formName="email"
+      type="email"
+      label="Email"
+      placeholder="alex@email.com"
+    >
+      <img src="/assets/svg/email-icon.svg" alt="" />
+    </app-primary-input>
+    <app-primary-input
+     formName="password" 
+     type="password" 
+     label="Senha"
+     >
+      <img src="/assets/svg/password-icon.svg" alt="" />
+    </app-primary-input>
+  </form>
 </app-default-login-layout>
+ 
